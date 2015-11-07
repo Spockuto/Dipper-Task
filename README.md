@@ -16,19 +16,15 @@ Dependencies
 	**Follow this as any package manager doesnt
 	provide the latest version**
 
-The package consists of 
-	--> scarper.py
-	--> cronjob.sh
-
 Functionality
 --------------
-- ##index.html
+- ## WebPage
 	A basic Login page which collects
 	Username
 	Password
 	Time for Cronjob (minutes:hours:days:months:days_of_week)
 
-- ##controller.rb:
+- ## Controller:
 	A ruby script which collects the data and runs the two scripts
 	scarper.py and cronjob.py
 	
@@ -45,13 +41,13 @@ Functionality
 		```ruby 
 		system("bash cronjob.sh <username> <password> <minutes> <hours> <days> <months> <days_of_week>")
 		``` 
-- ##scraper.py:
+- ## Scraper.py:
 			
 			The main file which does the scraping and saves the
 			data in a .json file locally
 			(Can be changed as needed)
 			
-- ##cronjob.sh:
+- ## Cronjob.sh:
 
 			It sets up the cronjob on scraper.py so that it
 			regularly scrapes the data.
